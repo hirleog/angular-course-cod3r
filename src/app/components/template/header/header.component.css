@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.title-group{
+    padding-left: 25px;
+}
+.title-group{
+    padding-right: 25px;
+}
