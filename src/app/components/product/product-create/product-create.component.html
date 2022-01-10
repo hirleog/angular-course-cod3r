@@ -1,1 +1,29 @@
-<p>product-create works!</p>
+<!-- Component filho responsavel por criar um produto. Esse Component fica dentro do component pai "product-crud". -->
+
+
+<!-- O elemento MATerial card, coloca um card em volta dos inputs e da essa sensação de relevo -->
+<mat-card>
+   <mat-card-title>Novo produto</mat-card-title>
+   <form>
+      <mat-form-field>
+         <!-- o [(ngModel)] é o two way data binding. Onde ele pega o valor desse input e substitui os valores dentro do objeto "produto" 
+         que foi criado no "create.ts" -->
+            <input matInput placeholder="Nome"
+                   [(ngModel)]="product.name" name="name">
+      </mat-form-field>
+      <mat-form-field>
+         <input matInput placeholder="Preço (R$)"
+                [(ngModel)]="product.price" name="price">
+      </mat-form-field>
+   </form>
+
+   <!-- Botões ligados ao typescript com metodos -->
+   <button mat-raised-button (click)="createProduct()" color="primary">
+      Salvar
+   </button>
+
+   <!-- esse botão cancela a operação e retornar a tela de products -->
+   <button mat-raised-button (click)="createProduct()">
+      Cancelar
+   </button>
+</mat-card>

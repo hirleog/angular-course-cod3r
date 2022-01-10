@@ -7,7 +7,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 const routes: Routes = [
   { path: "",         component: HomeComponent}, //sempre que houver um path raiz acione o component home
   { path: "products", component: ProductCrudComponent},
-  { path: "products/create", component: ProductCreateComponent}
+  { path: "product-create", component: ProductCreateComponent}
 ];
 
 @NgModule({
