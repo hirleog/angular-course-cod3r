@@ -11,6 +11,9 @@ export class ProductReadComponent implements OnInit {
 
   products: Product[] = [];
 
+  //variavel retirada da tabela - ela representa as linhas da tabela
+  displayedColumns = ['id', 'name', 'price',]
+
   constructor(private ProductSService: ProductSService) {
    }
 

@@ -9,11 +9,11 @@
          <!-- o [(ngModel)] é o two way data binding. Onde ele pega o valor desse input e substitui os valores dentro do objeto "produto" 
          que foi criado no "create.ts" -->
             <input matInput placeholder="Nome"
-                   [(ngModel)]="product.name" name="name">
+                   [(ngModel)]="product.name" name="name" >
       </mat-form-field>
       <mat-form-field>
          <input matInput placeholder="Preço (R$)"
-                [(ngModel)]="product.price" name="price">
+                [(ngModel)]="product.price" name="price" type="number" currency>
       </mat-form-field>
    </form>
 
